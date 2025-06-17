@@ -39,12 +39,12 @@ function checkLoginStatus() {
     const isLoggedIn = localStorage.getItem('isLoggedIn');
     const currentPage = window.location.pathname.split('/').pop();
     
-    if (isLoggedIn === 'true' && currentPage === 'login.html') {
+    if (isLoggedIn === 'true' && currentPage === 'index.html') {
         
         window.location.href = 'painel-principal.html';
-    } else if (isLoggedIn !== 'true' && currentPage !== 'login.html' && currentPage !== 'cadastro.html' && currentPage !== 'redefinir-senha.html') {
+    } else if (isLoggedIn !== 'true' && currentPage !== 'index.html' && currentPage !== 'cadastro.html' && currentPage !== 'redefinir-senha.html') {
         
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
     }
 }
 
@@ -52,7 +52,7 @@ function checkLoginStatus() {
 function logout() {
     localStorage.removeItem('isLoggedIn');
     localStorage.removeItem('userEmail');
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
 }
 
 

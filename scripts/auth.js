@@ -30,7 +30,7 @@ function performLogin(event) {
         
         window.location.href = 'painel-principal.html';
     } else {
-        // Login falhou
+        
         alert('Email ou senha incorretos. Tente novamente.');
     }
 }

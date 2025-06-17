@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="imgs/user-tev.jpeg">
+    <title>Tempo é vida</title>
+    <link rel="stylesheet" href="cadastro.css">
+
+</head>
+<body>
+    <main class = "container">
+        <section class = "container-cadastro">
+            <header class="container-cadastro-logos">
+                <div class="container-cadastro-logo-TP">
+                  <img src="imgs/user-tev.jpeg" alt="Logo Tempo é Vida">
+                </div>
+          
+                <div class="container-cadastro-logo-SUS">
+                  <img src="imgs/sus-sistema-unico-de-saude-logo-png_seeklogo-173547.png" alt="Logo SUS">
+                </div>
+              </header>
+
+            <h1 class = "container-cadastro-titulo">Cadastro</h1>
+
+        </section>
+
+        <section class = "container-cadastro-formulario">
+
+            <form>
+
+                <div class = "container-cadastro-formulario-input-nome">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" autocomplete="name" required>
+                </div>
+
+                <div class = "container-cadastro-formulario-input-numero">
+                    <label for="numero">Número do celular:</label>
+                    <input type="tel" name="numero" id="numero" placeholder="Digite seu número" autocomplete="tel" required>
+                </div>
+
+                <div class = "container-cadastro-formulario-input-cpf">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" autocomplete="cpf" required>
+                </div>
+
+                <div class = "container-cadastro-formulario-input-senha">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" autocomplete="new-password" required>
+                </div>
+
+                <div class = "container-cadastro-formulario-botao">
+                    <button type="submit">Confirmar</button>
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+    
+    <script src="auth.js"></script>
+</body>
+</html>

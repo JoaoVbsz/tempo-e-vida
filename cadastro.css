@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+ 
+    align-items: center;
+    background: #FAF9F6;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.container {
+    display: flex;
+
+    width: 90%;
+    max-width: 1200px;
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
+    border-radius: 40px;
+    padding: 25px 35px;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: #3c4a9ce0 0px 30px 30px -20px;
+}
+
+
+.container-cadastro {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container-cadastro-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.container-cadastro-logo-TP img,
+.container-cadastro-logo-SUS img {
+    max-width: 120px;
+    height: auto;
+}
+
+.container-cadastro-titulo {
+    text-align: center;
+    font-weight: 700;
+    font-size: 38px;
+    color: #092F57;
+    margin-bottom: 30px;
+}
+
+
+.container-cadastro-formulario {
+    flex: 1;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.container-cadastro-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-cadastro-formulario-input-nome,
+.container-cadastro-formulario-input-numero,
+.container-cadastro-formulario-input-cpf,
+.container-cadastro-formulario-input-senha {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-cadastro-formulario label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #092F57;
+    font-weight: 500;
+}
+
+.container-cadastro-formulario input[type="text"],
+.container-cadastro-formulario input[type="tel"],
+.container-cadastro-formulario input[type="password"] {
+    width: 90%;
+    background: white;
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: #5464c4e0 0px 10px 10px -5px;
+    border-inline: 2px solid transparent;
+    font-size: 16px;
+    color: #333;
+}
+
+.container-cadastro-formulario input::placeholder {
+    color: rgb(170, 170, 170);
+}
+
+.container-cadastro-formulario input:focus {
+    outline: none;
+    border-inline: 2px solid #087388;
+}
+
+.container-cadastro-formulario-botao button {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    background: linear-gradient(45deg, #092F57 0%, rgb(18, 177, 209) 100%);
+    color: white;
+    padding-block: 15px;
+    margin: 20px auto 0;
+    border-radius: 20px;
+    box-shadow: #3c4a9ce0 0px 20px 10px -15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: 18px;
+}
+
+.container-cadastro-formulario-botao button:hover {
+    transform: scale(1.03);
+    box-shadow: #3c4a9ce0 0px 23px 10px -20px;
+}
+
+.container-cadastro-formulario-botao button:active {
+    transform: scale(0.95);
+    box-shadow: #3c4a9ce0 0px 15px 10px -10px;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 95%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: #3c4a9c99 0px 20px 20px -15px;
+  }
+
+  .container-cadastro {
+    padding: 10px;
+  }
+
+  .container-cadastro-titulo {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .container-cadastro-logo-TP img,
+  .container-cadastro-logo-SUS img {
+    max-width: 70px;
+  }
+
+  .container-cadastro-formulario input[type="text"],
+  .container-cadastro-formulario input[type="tel"],
+  .container-cadastro-formulario input[type="password"] {
+    width: 100%; 
+    padding: 12px;
+  }
+
+  .container-cadastro-formulario-botao button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}

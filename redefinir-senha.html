@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="imgs/user-tev.jpeg">
+    <title>Tempo é vida</title>
+    <link rel="stylesheet" href="redefinir-senha.css">
+
+</head>
+
+<body>
+    <main class="container">
+        <section class = "container-reset">
+            <header class="container-reset-logos">
+                <div class="container-reset-logo-TP">
+                  <img src="imgs/logo-tev.jpeg" alt="Logo Tempo é Vida">
+                </div>
+        
+                <div class="container-reset-logo-SUS">
+                  <img src="imgs/sus-sistema-unico-de-saude-logo-png_seeklogo-173547.png" alt="Logo SUS">
+                </div>
+              </header>
+
+            <h1 class = "container-reset-titulo">Recuperar Senha</h1>
+
+        </section>
+
+        <section class = "container-reset-formulario">
+
+            <form>
+
+                <div class = "container-reset-formulario-input-numero">
+                    <label for="numero">Número do celular:</label>
+                    <input type="tel" name="numero" id="numero" placeholder="Digite seu número" autocomplete="tel" required>
+                </div>
+
+                <div class = "container-reset-formulario-input-codigo">
+                    <label for="codigo">Código de verificação:</label>
+                    <input type="text" name="codigo" id="codigo" placeholder="Digite o código" autocomplete="one-time-code" required>
+                </div>
+
+                <div class = "container-reset-formulario-input-senha">
+                    <label for="senha">Nova Senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua nova senha" autocomplete="new-password" required>
+                </div>
+
+                <div class = "container-reset-formulario-input-confirmar-senha">
+                    <label for="confirmar-senha">Confirmar Senha:</label>
+                    <input type="password" name="confirmar-senha" id="confirmar-senha" placeholder="Confirme sua nova senha" autocomplete="new-password" required>
+                </div>
+                
+                <div class = "container-reset-formulario-botao">
+                    <button type="submit">Confirmar</button>
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+    
+    <script src="auth.js"></script>
+</body>
+
+</html>

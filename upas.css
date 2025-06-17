@@ -1,0 +1,353 @@
+main {
+    margin-left: 250px;
+    max-width: calc(100% - 250px);
+    padding: 20px;
+    margin-top: 80px;
+    box-sizing: border-box;
+}
+
+.upas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.upa-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.upa-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.upa-card:hover .upa-image img {
+    transform: scale(1.05);
+}
+
+.upa-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.upa-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+}
+
+.upa-name {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.upa-address,
+.upa-phone,
+.upa-hours {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    color: #555;
+    word-wrap: break-word;
+}
+
+.upa-address i,
+.upa-phone i,
+.upa-hours i {
+    margin-right: 10px;
+    color: #0056b3;
+    min-width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.upa-services {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.upa-services h4 {
+    font-size: 1.1rem;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.upa-services ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.upa-services li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    word-wrap: break-word;
+}
+
+.upa-services li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.upa-actions {
+    margin-top: auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.upa-button {
+    display: inline-block;
+    background: linear-gradient(45deg, #092F57 0%, rgb(18, 177, 209) 100%);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    box-shadow: #3c4a9ce0 0px 10px 10px -5px;
+    white-space: nowrap;
+    flex: 1;
+    min-width: 130px;
+    max-width: 200px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.upa-button:hover {
+    transform: scale(1.05);
+    box-shadow: #3c4a9ce0 0px 15px 10px -8px;
+}
+
+.upa-button:active {
+    transform: scale(0.98);
+    box-shadow: #3c4a9ce0 0px 8px 8px -4px;
+}
+
+.upas-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.upas-title h2 {
+    font-size: 2rem;
+    color: #175ca7;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.upas-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(450px, 80vw);
+    height: 3px;
+    background-color: #98b1ce;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #092F57;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    word-wrap: break-word;
+}
+
+
+@media screen and (max-width: 1200px) {
+    main {
+        padding: 18px;
+    }
+    
+    .upas-container {
+        gap: 25px;
+        padding: 0 10px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    main {
+        padding: 15px;
+    }
+    
+    .upas-container {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 25px;
+        padding: 0 15px;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .upas-title h2::after {
+        width: min(300px, 70vw);
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        display: none; 
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        background-color: #f8f9fa;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+        transition: left 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    .sidebar.active {
+        left: 0; 
+    }
+
+    .header-content {
+        justify-content: space-between;
+    }
+
+    .search-container {
+        flex-grow: 1;
+        margin: 0 10px;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .user-profile {
+        margin-left: auto;
+    }
+
+    main {
+        margin-left: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    main {
+        padding: 10px !important;
+        margin-top: 60px;
+    }
+    
+    .hero {
+        padding: 20px 10px;
+    }
+    
+    .hero h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .hero p {
+        font-size: 0.9rem;
+        padding: 0 5px;
+    }
+    
+    .upas-title h2 {
+        font-size: 1.4rem;
+    }
+    
+    .upas-title h2::after {
+        width: min(150px, 50vw);
+    }
+    
+    .upas-container {
+        padding: 0 5px;
+        gap: 15px;
+    }
+    
+    .upa-info {
+        padding: 15px;
+    }
+    
+    .upa-name {
+        font-size: 1.3rem;
+        line-height: 1.2;
+    }
+    
+    .upa-address,
+    .upa-phone,
+    .upa-hours {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+    
+    .upa-services h4 {
+        font-size: 1rem;
+    }
+    
+    .upa-services li {
+        font-size: 0.9rem;
+    }
+    
+    .upa-actions {
+        padding: 0 15px;
+    }
+    
+    .upa-button {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+

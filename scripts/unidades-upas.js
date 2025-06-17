@@ -285,7 +285,7 @@ function createUpaCards() {
 document.addEventListener('DOMContentLoaded', function() {
     const integrationStyles = document.createElement('link');
     integrationStyles.rel = 'stylesheet';
-    integrationStyles.href = '/upas.css';
+    integrationStyles.href = 'styles/upas.css';
     document.head.appendChild(integrationStyles);
     
     createUpaCards();

@@ -144,7 +144,7 @@ body {
 .img-logo {
     width: 60%;
     height: 100vh;
-    background-image: url('imgs/logo-tev.jpeg');
+    background-image: url('/imgs/logo-tev.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     border-top-left-radius: 65px;
@@ -180,7 +180,7 @@ body {
         width: 200px;
         height: 200px;
         min-height: auto;
-        background-image: url("imgs/logo-tev.jpeg");
+        background-image: url("/imgs/logo-tev.jpeg");
         background-size: contain;
         background-position: center;
         margin: 0 auto 20px auto;
